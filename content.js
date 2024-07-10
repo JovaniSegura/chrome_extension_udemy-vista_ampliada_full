@@ -20,7 +20,7 @@ function setupCustomCursorBehavior() {
     clearTimeout(cursorHideTimeout);
     cursorHideTimeout = setTimeout(() => {
       body.classList.add('udemy-custom-cursor-hide');
-    }, 3000);
+    }, 2000); // Cambiado de 3000 a 2000 para dos segundos
   }
   
   document.addEventListener('mousemove', showCursor);
@@ -58,9 +58,8 @@ function createVHButton() {
 
 // Observador para detectar cambios en el DOM
 const observer = new MutationObserver((mutations) => {
-  if (document.querySelector('.shaka-control-bar--control-bar--gXZ1u')) {
+  if (!document.querySelector('.vh-toggle-button') && document.querySelector('.shaka-control-bar--control-bar--gXZ1u')) {
     createVHButton();
-    observer.disconnect();
   }
 });
 
