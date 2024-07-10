@@ -1,23 +1,23 @@
 .vh-toggle-button {
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-    padding: 5px;
-  }
-  
-  .vh-toggle-button:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-  }
-  
-  body.vh-expanded .curriculum-item-view--scaled-height-limiter--lEOjL.curriculum-item-view--no-sidebar--LGmz- {
-    max-height: 100vh !important;
-  }
-  
-  body:not(.vh-expanded) .curriculum-item-view--scaled-height-limiter--lEOjL.curriculum-item-view--no-sidebar--LGmz- {
-    max-height: 80vh !important;
-  }
-  
-  body.vh-expanded .app--row--E-WFM.app--header--QuLOL {
-    display: none !important;
-  }
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.vh-toggle-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+body.vh-expanded .curriculum-item-view--scaled-height-limiter--lEOjL.curriculum-item-view--no-sidebar--LGmz- {
+  max-height: 100vh !important;
+}
+
+body:not(.vh-expanded) .curriculum-item-view--scaled-height-limiter--lEOjL.curriculum-item-view--no-sidebar--LGmz- {
+  max-height: 80vh !important;
+}
+
+body.vh-expanded .app--row--E-WFM.app--header--QuLOL {
+  display: none !important;
+}
